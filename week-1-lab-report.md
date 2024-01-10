@@ -1,4 +1,4 @@
-# CD:
+# cd
 
 **1. No arguments**
 
