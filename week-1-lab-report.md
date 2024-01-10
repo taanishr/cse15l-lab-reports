@@ -97,3 +97,52 @@ b) The filesystem consisted of a home directory, which contained a lecture1 subf
 
 c) The output was not an error
 
+# cat
+
+**1. No arguments**
+
+Output:
+
+```
+[user@sahara ~]$ cat
+
+```
+
+a) Current working directory when command was run:
+```/home```
+
+b) The filesystem consisted of a home directory, which contained a lecture1 subfolder (containing a messages directory with some files), a java binary, a java file, and a readme. When cat is ran with no arguments, the terminal enters a mode where anything typed will be printed to the terminal. To escape this, the user must press CRTL+C.
+
+c) The output was not an error
+
+**2. Path to a directory as an argument**
+
+Output:
+
+```
+[user@sahara ~]$ cat lecture1/
+cat: lecture1/: Is a directory
+```
+
+a) Current working directory when command was run:
+```/home```
+
+b) The filesystem consisted of a home directory, which contained a lecture1 subfolder (containing a messages directory with some files), a java binary, a java file, and a readme. When cat is ran with a directory as an argument (```lecture1/```), it prints an error statement because cat reads the text contents of files, and directories have no text contents.
+
+c) The output was an error because cat reads the text contents of files, and directories have no text contents.
+
+**3. Path to a file as an argument**
+
+Output:
+
+```
+[user@sahara ~]$ cat lecture1/messages/en-us.txt 
+Hello World!
+```
+
+a) Current working directory when command was run:
+```/home```
+
+b) The filesystem consisted of a home directory, which contained a lecture1 subfolder (containing a messages directory with some files), a java binary, a java file, and a readme. When cat is ran with a file path as an argument (```lecture1/messages/en-us.txt```), it prints the text contents of the file.
+
+c) The output was not an error.
