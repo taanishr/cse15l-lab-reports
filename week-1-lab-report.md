@@ -1,6 +1,7 @@
 # CD:
 
 **1. No arguments**
+
 Output:
 ```
 [user@sahara ~]$ cd
@@ -15,7 +16,9 @@ b) The filesystem consisted of a home directory, which contained a lecture1 subf
 c) CD doesn't print anything to the terminal when successful, so no output means it worked.
 
 **2. Path to a directory as an argument**
-   
+
+Output:
+
 ```
 [user@sahara ~]$ cd lecture1/
 [user@sahara ~/lecture1]$
