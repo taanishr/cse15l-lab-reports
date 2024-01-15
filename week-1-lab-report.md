@@ -166,6 +166,6 @@ a) Current working directory when command was run:
 /home
 ```
 
-b) The filesystem consisted of a home directory, which contained a lecture1 subfolder (containing a messages directory with some files), a java binary, a java file, and a readme. When cat is ran with a file path as an argument (`lecture1/messages/en-us.txt`), it prints the text contents of the file.
+b) The filesystem consisted of a home directory, which contained a lecture1 subfolder (containing a messages directory with some files), a java binary, a java file, and a readme. When cat is ran with a file path as an argument (`lecture1/messages/en-us.txt`), it prints the text contents of the file. When cat is run with multiple arguments (each denoting a file path), it prints the text contents of each file one after another.
 
 c) The output was not an error.
