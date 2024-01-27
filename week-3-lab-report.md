@@ -32,3 +32,5 @@ class ChatServer {
     }
 }
 ```
+
+# Using /add-message
