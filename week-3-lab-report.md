@@ -37,13 +37,17 @@ class ChatServer {
 ### Screenshot 1
 ![First screenshot of /add-message](/w3-lr-1.png)
 a) I called the handleRequest(), url.getPath(), equals(), getQuery(), split(), and String.format() methods in my code.
-b) handleRequest took in the webpage's URL. The equals method checked that the webpage was on the add-request path. I also split the query by the & (splitting the message and user) and these resulting message and user arrays by the = (splitting them into a prompt and value). The only relevant field from the class was messages, which was a string that held all the messages added by users (seperated by newlines).
-c) The messages field is initially empty. When this request is made, the messages field is updated to "taanish: i like hot dogs\n".
+
+b) handleRequest takes in the webpage's URL. The equals method checks that the webpage is on the add-request path. I also split the query by the & (splitting the message and user) and these resulting message and user arrays by the = (splitting them into a prompt and value). The only relevant field from the class is messages, which is a string that holds all the messages added by users (seperated by newlines). It is initialized as an empty string `""`.
+
+c) The messages field is initially empty (`""`). When this request is made, the messages field is updated to `"taanish: i like hot dogs\n"`.
 
 ### Screenshot 2
 ![First screenshot of /add-message](/w3-lr-1.png)
 a) I called the handleRequest(), url.getPath(), equals(), getQuery(), split(), and String.format() methods in my code.
-b) handleRequest took in the webpage's URL. The equals method checked that the webpage was on the add-request path. I also split the query by the & (splitting the message and user) and these resulting message and user arrays by the = (splitting them into a prompt and value). The only relevant field from the class was messages, which was a string that held all the messages added by users (seperated by newlines).
-c) The messages field is initially "taanish: i like hot dogs\n". When this request is made, the messages field is updated to "taanish: i like hot dogs\nsomeone else: the weather is nice today\n".
+
+b) handleRequest takes in the webpage's URL. The equals method checks that the webpage is on the add-request path. I also split the query by the & (splitting the message and user) and these resulting message and user arrays by the = (splitting them into a prompt and value). The only relevant field from the class is messages, which is a string that holds all the messages added by users (seperated by newlines). After the first request, the value of messages is `"taanish: i like hot dogs\n"`.
+
+c) The messages field is initially `"taanish: i like hot dogs\n"`. When this request is made, the messages field is updated to `"taanish: i like hot dogs\nsomeone else: the weather is nice today\n"`.
 
 
