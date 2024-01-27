@@ -34,3 +34,10 @@ class ChatServer {
 ```
 
 # Using /add-message
+### Screenshot 1
+![First screenshot of /add-message](/w3-lr-1.png)
+1.
+2.
+3.
+
+
