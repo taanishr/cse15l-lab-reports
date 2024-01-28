@@ -52,16 +52,18 @@ b) handleRequest takes in the webpage's URL. The url argument (`http://localhost
 c) The messages field is initially `"taanish: i like hot dogs\n"`. When this request is made, the messages field is updated to `"taanish: i like hot dogs\nsomeone else: the weather is nice today\n"`.
 
 # Part 2
-**Path to private key:** The path to my private key is `/.ssh`. When ls is ran with `/.ssh as the path`, the output is:
+**Path to private key:** The path to my private key is `.ssh/id_rsa`. When ls is ran with `.ssh/id_rsa` as the path, the output is:
 ```
-treja@Taanishs-MacBook-Air ~ % ls .ssh
-id_rsa          id_rsa.pub      known_hosts     known_hosts.old
+treja@Taanishs-MacBook-Air ~ % ls .ssh/id_rsa
+.ssh/id_rsa
+treja@Taanishs-MacBook-Air ~ % 
+
 ```
 
-**Path to public key:** The path to my public key is `/.ssh`. When ls is ran with `/.ssh as the path`, the output is:
+**Path to public key:** The path to my public key is `.ssh/authorized_keys`. When ls is ran with `.ssh/authorized_keys` as the path, the output is:
 ```
-[treja@ieng6-203]:~:50$ ls .ssh
-authorized_keys  known_hosts
+[treja@ieng6-203]:~:54$ ls .ssh/authorized_keys 
+.ssh/authorized_keys
 ```
 
 **Terminal interaction with ieng6:**
