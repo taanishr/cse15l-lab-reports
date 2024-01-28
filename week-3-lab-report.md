@@ -1,4 +1,5 @@
-# ChatServer Code
+# Part 1
+## ChatServer Code
 ```
 import java.io.IOException;
 import java.net.URI;
@@ -33,7 +34,7 @@ class ChatServer {
 }
 ```
 
-# Using /add-message
+## Using /add-message
 ### Screenshot 1
 ![First screenshot of /add-message](/w3-lr-1.png)
 a) I called the handleRequest(), url.getPath(), equals(), getQuery(), split(), and String.format() methods in my code.
@@ -50,4 +51,6 @@ b) handleRequest takes in the webpage's URL. The url argument (`http://localhost
 
 c) The messages field is initially `"taanish: i like hot dogs\n"`. When this request is made, the messages field is updated to `"taanish: i like hot dogs\nsomeone else: the weather is nice today\n"`.
 
+# Part 2
+Path to private key:
 
