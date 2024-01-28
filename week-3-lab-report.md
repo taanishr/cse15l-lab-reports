@@ -52,5 +52,45 @@ b) handleRequest takes in the webpage's URL. The url argument (`http://localhost
 c) The messages field is initially `"taanish: i like hot dogs\n"`. When this request is made, the messages field is updated to `"taanish: i like hot dogs\nsomeone else: the weather is nice today\n"`.
 
 # Part 2
-Path to private key:
+**Path to private key:** The path to my private key is `/.ssh`. When ls is ran with `/.ssh as the path`, the output is:
+```
+treja@Taanishs-MacBook-Air ~ % ls .ssh
+id_rsa          id_rsa.pub      known_hosts     known_hosts.old
+```
+
+**Path to public key:** The path to my public key is `/.ssh`. When ls is ran with `/.ssh as the path`, the output is:
+```
+[treja@ieng6-203]:~:50$ ls .ssh
+authorized_keys  known_hosts
+```
+
+**Terminal interaction with ieng6:**
+```
+treja@Taanishs-MacBook-Air ~ % ssh treja@ieng6.ucsd.edu
+Last login: Sat Jan 27 16:03:51 2024 from 100.90.236.54
+quota: Cannot resolve mountpoint path /home/linux/ieng6/cs120wi24/public/.snapshot/daily.2023-12-28_0010: Stale file handle
+Hello treja, you are currently logged into ieng6-203.ucsd.edu
+
+You are using 0% CPU on this system
+
+Cluster Status 
+Hostname     Time    #Users  Load  Averages  
+ieng6-201   16:05:01   23  0.31,  0.45,  0.65
+ieng6-202   16:05:01   17  0.32,  0.41,  0.43
+ieng6-203   16:05:01   23  3.36,  3.11,  2.57
+
+ 
+
+To begin work for one of your courses [ cs15lwi24 ], type its name 
+at the command prompt.  (For example, "cs15lwi24", without the quotes).
+
+To see all available software packages, type "prep -l" at the command prompt,
+or "prep -h" for more options.
+[treja@ieng6-203]:~:52$ ls 
+Desktop  Documents  Downloads  Music  Pictures  Public  Templates  Videos  perl5  wavelet
+[treja@ieng6-203]:~:53$ 
+```
+
+# Part 3
+One thing I learned from lab this week was setting up ssh. Logging into the server with my password each time was getting tedious, but private/public keys offer a more secure and convienent way to access servers. It also opens up a lot of operations, such as secure file transfers with scp
 
