@@ -56,8 +56,6 @@ c) The messages field is initially `"taanish: i like hot dogs\n"`. When this req
 ```
 treja@Taanishs-MacBook-Air ~ % ls .ssh/id_rsa
 .ssh/id_rsa
-treja@Taanishs-MacBook-Air ~ % 
-
 ```
 
 **Path to public key:** The path to my public key is `.ssh/authorized_keys`. When ls is ran with `.ssh/authorized_keys` as the path, the output is:
