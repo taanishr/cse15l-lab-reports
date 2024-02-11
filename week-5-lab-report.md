@@ -211,8 +211,8 @@ This command line option captures the lines before and after the matched content
 
 Source: Found in `man grep`
 
-## Command: `grep`
 ### Command-line option 2: Only listing file names with `-l`
+
 Example 1:
 ```
 reja@Taanishs-MacBook-Air technical % grep -l DNA biomed/*.txt
@@ -698,4 +698,15 @@ biomed/rr196.txt
 
 This command line option only lists the filenames where a search was found. This is useful when the data from a list of pattern matched files needs to processed later. For example, while making an automated grading system, we may need to search for all files with a certain function header then use those file names to run tests later. This command line option is also useful when processing a large amount of files, as it saves on processing time.
 
-Source: found in `man grep`
+Source: Found in `man grep`
+
+Example 2:
+
+```
+treja@Taanishs-MacBook-Air technical % echo "DNA is a complex molecule." | grep -l DNA
+(standard input)
+```
+
+The `-l` flag can also search through standard output. If the output of a command is piped to `grep -l` with a string provided, the command will output `(standard output)` if it was found. This may be useful when trying to determine if the output of some command contained a specific exit code, but the contents of the line of that exit code aren't needed.
+
+Source: Found in `man grep`
