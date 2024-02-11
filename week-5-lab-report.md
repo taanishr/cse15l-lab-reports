@@ -69,9 +69,9 @@ plos/pmed.0020149.txt-        developed countries, and identifying and treating 
 plos/pmed.0020149.txt-        essential role in the prevention of CHD. Therapeutic lifestyle changes are important for
 ```
 
-This command line option captures the lines before and after the matched content along with the matched line. In this case, 2 was provided as the number of lines to capture. This may be useful while looking through a long code base and you want to key in on the context surrounding a certain function call or variable mention.
+This command line option captures the lines before and after the matched content along with the matched line. In this case, `2` was provided as the number of lines to capture. This may be useful while looking through a long code base and you want to key in on the context surrounding a certain function call or variable mention.
 
-Source: Found in manual of grep.
+Source: Found in `man grep`.
 
 Example 2:
 ```
@@ -207,6 +207,14 @@ government/Post_Rate_Comm/WolakSpeech_usps.txt-Demand functions differ across ho
 government/Post_Rate_Comm/WolakSpeech_usps.txt-and unobservable characteristics of the household
 government/Post_Rate_Comm/WolakSpeech_usps.txt-Using our econometric model, we can compute an estimate of any
 ```
-This command line option captures the lines before and after the matched content along with the matched line. In this case, 5 was provided as the number of lines to capture. This specific example highlights how the `-C` flag may be useful to capture longer sections of text (such as paragraphs) which contain a specific string.
+This command line option captures the lines before and after the matched content along with the matched line. In this case, `5` was provided as the number of lines to capture. This specific example highlights how the `-C` flag may be useful to capture longer sections of text (such as paragraphs) which contain a specific string.
 
-Source: Found in manual of grep.
+Source: Found in `man grep`
+
+## Command: `grep`
+### Command-line option 2: Highlight matches with `--color`
+```
+treja@Taanishs-MacBook-Air technical % grep --color 911 government/About_LSC/*.txt
+government/About_LSC/State_Planning_Special_Report.txt:19881989199019<p style="color:red">911</p>992199319941995199619971998199920002001
+government/About_LSC/commission_report.txt:S16<p style="color:red">911</p> (Oct. 17, 1986) (statement of Sen. Kennedy); March Comments
+```
