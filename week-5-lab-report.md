@@ -213,8 +213,6 @@ Source: Found in `man grep`
 
 ## Command: `grep`
 ### Command-line option 2: Highlight matches with `--color`
-```
-treja@Taanishs-MacBook-Air technical % grep --color 911 government/About_LSC/*.txt
-government/About_LSC/State_Planning_Special_Report.txt:19881989199019<p style="color:red">911</p>992199319941995199619971998199920002001
-government/About_LSC/commission_report.txt:S16<p style="color:red">911</p> (Oct. 17, 1986) (statement of Sen. Kennedy); March Comments
-```
+`treja@Taanishs-MacBook-Air technical % grep --color 911 government/About_LSC/*.txt`
+`government/About_LSC/State_Planning_Special_Report.txt:19881989199019`<p style="color:red">`911`</p>`992199319941995199619971998199920002001`
+`government/About_LSC/commission_report.txt:S16`<p style="color:red">`911`</p>` (Oct. 17, 1986) (statement of Sen. Kennedy); March Comments`
