@@ -213,3 +213,6 @@ Source: Found in `man grep`
 
 ## Command: `grep`
 ### Command-line option 2: Highlight matches with `--color`
+`treja@Taanishs-MacBook-Air technical % grep --color 911 government/About_LSC/*.txt`
+<code>government/About_LSC/State_Planning_Special_Report.txt:19881989199019</code><code style="color : red">911</code><code>992199319941995199619971998199920002001</code>
+<code>government/About_LSC/commission_report.txt:S16</code><code style="color : red">911</code><code> (Oct. 17, 1986) (statement of Sen. Kennedy); March Comments</code>
