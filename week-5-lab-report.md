@@ -1,6 +1,6 @@
 # Part 1
 
-##Failure-inducing input: 
+##Failure-inducing input
 ```
 public void testReverseInPlace() {
   int[] input2 =  { 1, 2, 3};
@@ -9,7 +9,7 @@ public void testReverseInPlace() {
 }
 ```
 
-##Input which does not induce a failure:
+##Input which does not induce a failure
 ```
 public void testReverseInPlace() {
   int[] input1 =  { 3 };
@@ -18,7 +18,7 @@ public void testReverseInPlace() {
 }
 ```
 
-##Symptom:
+##Symptom
 ![Symptom when both tests are ran](/w5-s.png)
 
 ## Bug
