@@ -707,6 +707,6 @@ treja@Taanishs-MacBook-Air technical % echo "DNA is a complex molecule." | grep 
 (standard input)
 ```
 
-The `-l` flag can also search through standard output. If the output of a command is piped to `grep -l` with a string provided, the command will output `(standard input)` if it was found. This may be useful when trying to determine if the output of some command contained a specific exit code, but the contents of the line of that exit code aren't needed.
+The `-l` flag can also search through standard input. If the output of a command is piped to `grep -l` with a string provided, the command will output `(standard input)` if the string was found. This may be useful when trying to determine if the output of some command contained a specific exit code, but the contents of the line of that exit code aren't needed.
 
 Source: Found in `man grep`
