@@ -696,6 +696,6 @@ biomed/rr191.txt
 biomed/rr196.txt
 ```
 
-This command line option only lists the filenames where a search was found. This is useful when data needs to processed later, or when a large volume of files need to be searched through, as `-l` saves on processing time.
+This command line option only lists the filenames where a search was found. This is useful when the data from a list of pattern matched files needs to processed later. For example, while making an automated grading system, we may need to search for all files with a certain function header then use those file names to run tests later. This command line option is also useful when processing a large amount of files, as it saves on processing time.
 
 Source: found in `man grep`
