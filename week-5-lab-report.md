@@ -46,3 +46,29 @@ reverseInPlace initially accessed the original array instead of making a copy. T
 
 # Part 2
 ## Command: `grep`
+### Command-line option 1: Capturing surrounding content of match with `-C`
+Example 1: 
+```
+treja@Taanishs-MacBook-Air technical % grep -C2 Coronary plos/*.txt
+plos/pmed.0020098.txt-        Patients at risk for atherosclerotic cardiovascular disease are identifiable only up to
+plos/pmed.0020098.txt-        a point using traditional methods, including the Framingham risk score [1], the European
+plos/pmed.0020098.txt:        SCORE (Systemic Coronary Risk Evaluation) [2], and the C-reactive protein level [3]. These
+plos/pmed.0020098.txt-        are particularly effective for people in the highest risk groups, but they have serious
+plos/pmed.0020098.txt-        flaws. They do not take family history of premature coronary artery disease into account;
+--
+plos/pmed.0020123.txt-      
+plos/pmed.0020123.txt-        Introduction
+plos/pmed.0020123.txt:        Coronary heart disease (CHD) remains the leading cause of morbidity and mortality in the
+plos/pmed.0020123.txt-        United States and is associated with substantial economic cost [1]. Hyperlipidemia
+plos/pmed.0020123.txt-        represents an important modifiable risk factor in the development and progression of CHD.
+--
+plos/pmed.0020149.txt-      
+plos/pmed.0020149.txt-        
+plos/pmed.0020149.txt:        Coronary heart disease (CHD) is the leading cause of morbidity and mortality in
+plos/pmed.0020149.txt-        developed countries, and identifying and treating patients with high cholesterol has an
+plos/pmed.0020149.txt-        essential role in the prevention of CHD. Therapeutic lifestyle changes are important for
+```
+
+This command line option captures the lines before and after the matched content along with the matched line. In this case, 2 was provided as the number of lines to capture. This may be useful while looking through a long code base and you want to key in on the context surrounding a certain function call or variable mention.
+
+Example 2:
