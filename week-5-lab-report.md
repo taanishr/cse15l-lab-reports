@@ -19,5 +19,6 @@ public void testReverseInPlace() {
 ```
 
 Symptom:
+![Symptom when both tests are ran](/w5-s.png)
 
 
