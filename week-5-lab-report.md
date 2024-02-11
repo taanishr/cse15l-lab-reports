@@ -44,4 +44,4 @@ static void reverseInPlace(int[] arr) {
 
 reverseInPlace initially accessed the original array instead of making a copy. This meant that the array would become a mirror image of the elements in the second half of the array. By making a copy and accessing that copy instead, the method theny properly swapped the beginning and end elements.
 
-
+# Part 2
