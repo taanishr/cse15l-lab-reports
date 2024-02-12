@@ -710,3 +710,33 @@ treja@Taanishs-MacBook-Air technical % echo "DNA is a complex molecule." | grep 
 The `-l` flag can also search through standard input. If the output of a command is piped to `grep -l` with a string provided, the command will output `(standard input)` if the string was found. This may be useful when trying to determine if the output of some command contained a specific exit code, but the contents of the line of that exit code aren't needed.
 
 Source: Found in `man grep`
+
+### Command-line option 3: Matching only the word provided `-w`
+Example 1:
+
+```
+treja@Taanishs-MacBook-Air technical % grep -w "apple" biomed/*.txt
+biomed/1471-2202-2-5.txt:            computer http://www.apple.com. If the criteria for
+biomed/1471-2458-3-11.txt:        fresh-pressed apple cider [ 28 ] . Other foodborne
+```
+
+Example 2:
+
+```
+
+```
+
+### Command-line option 4: Returning the filenames of files without the provided strings
+
+Example 1:
+```
+treja@taanishs-air technical % grep -L rehab  government/Alcohol_problems/*.txt
+government/Alcohol_problems/DraftRecom-PDF.txt
+government/Alcohol_problems/Session2-PDF.txt
+government/Alcohol_problems/Session3-PDF.txt
+```
+
+Example 2:
+```
+
+```
