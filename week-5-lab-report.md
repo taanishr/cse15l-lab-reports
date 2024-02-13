@@ -42,7 +42,7 @@ static void reverseInPlace(int[] arr) {
 }
 ```
 
-reverseInPlace initially accessed the original array instead of making a copy. This meant that the array would become a mirror image of the elements in the second half of the array. By making a copy and accessing that copy instead, the method theny properly swapped the beginning and end elements.
+reverseInPlace initially accessed the original array instead of making a copy. This meant that the array would become a mirror image of the elements in the second half of the array. By making a deep copy of the array and accessing the copy instead, the method then properly swapped the beginning and end elements.
 
 # Part 2
 ## Command: `grep`
@@ -126,7 +126,7 @@ biomed/1471-2458-3-11.txt
 biomed/1472-6882-1-7.txt
 ```
 
-This command line option only lists the filenames where a search was found. This is useful when the data from a list of pattern matched files needs to processed later. For example, while making an automated grading system, we may need to search for all files with a certain function header then use those file names to run tests later. This command line option is also useful when processing a large amount of files, as it saves on processing time.
+This command line option only lists the filenames where a search was found. This is useful when the data from a list of pattern matched files needs to processed later. For example, while making an automated grading system, we may need to search for all files with a certain function header and then use those file names to run tests later. This command line option is also useful when processing a large amount of files, as the smaller output saves on processing time compared to the regular grep command.
 
 Source: Found in `man grep`
 
@@ -137,11 +137,11 @@ treja@Taanishs-MacBook-Air technical % echo "DNA is a complex molecule." | grep 
 (standard input)
 ```
 
-The `-l` flag can also search through standard input. If the output of a command is piped to `grep -l` with a string provided, the command will output `(standard input)` if the string was found. This may be useful when trying to determine if the output of some command contained a specific exit code, but the contents of the line of that exit code aren't needed.
+The `-l` flag can also search through standard input. If the output of a command is piped to `grep -l` with a string provided, the command will output `(standard input)` if the string was found. This may be useful when trying to determine if the output of some command contained a specific exit code, but the contents of its output aren't needed.
 
 Source: Found in `man grep`
 
-### Command-line option 3: Matching only the word provided `-w`
+### Command-line option 3: Matching the exact word provided with `-w`
 Example 1:
 
 ```
@@ -150,7 +150,7 @@ biomed/1471-2202-2-5.txt:            computer http://www.apple.com. If the crite
 biomed/1471-2458-3-11.txt:        fresh-pressed apple cider [ 28 ] . Other foodborne
 ```
 
-This command line option only lists matches if the exact string is found (i.e., it is not a substring). For example, when searching accept, a word like acceptance would be excluded from the search. This is useful for filtering out text or code, like when searching for variable names to see how some data is transformed over the time of a file.
+This command line option only lists matches if the exact string is found (i.e., it is not a substring). For example, when searching for accept, a word like acceptance would be excluded from the search. This is useful for filtering text. For instance, when examining how a variable's data is transformed over time in a file, using grep -w with the variable name to find exact instances of that variable name in the file could be helpful.
 
 Source: Found in `man grep`
 
@@ -221,7 +221,7 @@ government/Post_Rate_Comm/Gleiman_gca2000.txt:story, Denton was leaning into the
 ```
 
 
-This command line option only limits matches to the number provided per file (in this case 2). Limiting the number of matches to a number other than 1 may be useful when we need to cap the size of the output, or only need to process a certain amount of occurences.
+This command line option only limits matches to the number provided per file (in this case 2). Limiting the number of matches to a number other than 1 may be useful when we need to cap the size of the output, or only need to process a certain amount of occurences of the string.
 
 Source: Found in `man grep`
 
