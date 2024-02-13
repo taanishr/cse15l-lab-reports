@@ -185,3 +185,20 @@ government/Media/Making_a_case.txt:DNA-People's Legal Services' monthly seminar 
 government/Media/New_funding_sources.txt:DNA-People's Legal Services in Flagstaff. The Arizona Equal Justice
 government/Media/The_State_of_Pro_Bono.txt:of her own money on an appeal based on DNA evidence.
 ```
+
+Example 2:
+```
+treja@taanishs-air technical % grep -m 1 ball government/*/*.txt
+government/About_LSC/LegalServCorp_v_VelazquezOpinion.txt:campaign, or for use in "advocating or opposing any ballot
+government/Env_Prot_Agen/final.txt:the Western Hemisphere, and with our allies globally, to
+government/Env_Prot_Agen/multi102902.txt:these globally traded commodity chemicals, it is projected that
+government/Gen_Account_Office/Testimony_cg00010t.txt:United States against an intercontinental ballistic missile attack
+government/Media/A_helping_hand.txt:Linda Samels Ceballos entered Loyola Law School in Los Angeles
+government/Media/Entities_Merge.txt:Verde County elections by absentee ballot after a former Ku Klux
+government/Media/Legal-aid_chief.txt:Cornhusker football player, he shooed a young Tom Osborne off a
+government/Media/Terrorist_Attack.txt:Judge Kaye's hopes for keeping the pro bono ball rolling:
+government/Media/Unusual_Woodburn.txt:in the late 1990s. He sees Mixtecs playing basketball, shopping in
+government/Media/predatory_loans.txt:penalties and balloon payments on high-cost home loans.
+government/Post_Rate_Comm/Gleiman_EMASpeech.txt:crystal ball, I thought you might be interested in a brief outline
+government/Post_Rate_Comm/Gleiman_gca2000.txt:rabid baseball fan. So much so that he tries to see at least one
+```
