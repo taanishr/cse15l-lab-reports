@@ -69,7 +69,7 @@ plos/pmed.0020149.txt-        developed countries, and identifying and treating 
 plos/pmed.0020149.txt-        essential role in the prevention of CHD. Therapeutic lifestyle changes are important for
 ```
 
-The `C` command line option captures the lines before and after the matched content along with the matched line. In this case, `2` was provided as the number of lines to capture. This may be useful while looking through a long code base and you want to key in on the context surrounding a certain function call or variable mention.
+I called `grep` with command line option `-C2` and string `Coronary` for all `txt` files (`*.txt`) in `plos/`. The `-C` command line option captures the lines before and after the matched content along with the matched line. In this case, `2` was provided as the number of lines to capture. This may be useful while looking through a long code base and you want to key in on the context surrounding a certain function call or variable mention.
 
 Source: Found in `man grep`.
 
@@ -113,7 +113,7 @@ biomed/1472-6882-1-7.txt-          magnesium. Animal product consumption was ver
 biomed/1472-6882-1-7.txt-          especially intakes of meat, poultry, and fish. Intakes
 ```
 
-The `-C` command line option captures the lines before and after the matched content along with the matched line. In this case, `5` was provided as the number of lines to capture. This specific example highlights how the `-C` flag may be useful to capture longer sections of text (such as paragraphs) which contain a specific string.
+I called `grep` with command line option `-C5` and string `salad` for all `txt` files (`*.txt`) in `biomed/`. The `-C` command line option captures the lines before and after the matched content along with the matched line. In this case, `5` was provided as the number of lines to capture. This specific example highlights how the `-C` flag may be useful to capture longer sections of text (such as paragraphs) which contain a specific string.
 
 Source: Found in `man grep`
 
@@ -126,7 +126,7 @@ biomed/1471-2458-3-11.txt
 biomed/1472-6882-1-7.txt
 ```
 
-The `l` command line option only lists the filenames where a search was found. This is useful when the data from a list of pattern matched files needs to processed later. For example, while making an automated grading system, we may need to search for all files with a certain function header and then use those file names to run tests later. This command line option is also useful when processing a large amount of files, as the smaller output saves on processing time compared to the regular `grep` command.
+I called `grep` with command line option `-l` and string `salad` for all `txt` files (`*.txt`) in `biomed/`. The `l` command line option only lists the filenames where a search was found. This is useful when the data from a list of pattern matched files needs to processed later. For example, while making an automated grading system, we may need to search for all files with a certain function header and then use those file names to run tests later. This command line option is also useful when processing a large amount of files, as the smaller output saves on processing time compared to the regular `grep` command.
 
 Source: Found in `man grep`
 
@@ -137,7 +137,7 @@ treja@Taanishs-MacBook-Air technical % echo "DNA is a complex molecule." | grep 
 (standard input)
 ```
 
-The `-l` flag can also search through standard input. If the output of a command is piped to `grep -l` with a string provided, the command will output `(standard input)` if the string was found. This may be useful when trying to determine if the output of some command contained a specific exit code, but the contents of its output aren't needed.
+I piped the output of `echo "DNA is a complex molecule."` to `grep` with command line option `-l` and string `DNA`. This example highlights how the `-l` flag can also search through standard input. If the output of a command is piped to `grep -l` with a string provided, the command will output `(standard input)` if the string was found. This may be useful when trying to determine if the output of some command contained a specific exit code, but the contents of its output aren't needed.
 
 Source: Found in `man grep`
 
@@ -150,7 +150,7 @@ biomed/1471-2202-2-5.txt:            computer http://www.apple.com. If the crite
 biomed/1471-2458-3-11.txt:        fresh-pressed apple cider [ 28 ] . Other foodborne
 ```
 
-The `-w` command line option only lists matches if the exact string is found (i.e., it is not a substring). For example, when searching for accept, a word like acceptance would be excluded from the search. This is useful for filtering text. For instance, when examining how a variable's data is transformed over time in a file, using `grep -w` with the variable name to find exact instances of that variable name in the file could be helpful.
+I called `grep` with command line option `-w` and string `apple` for all `txt` files (`*.txt`) in `biomed/`. The `-w` command line option only lists matches if the exact string is found (i.e., it is not a substring). For example, when searching for accept, a word like acceptance would be excluded from the search. This is useful for filtering text. For instance, when examining how a variable's data is transformed over time in a file, using `grep -w` with the variable name to find exact instances of that variable name in the file could be helpful.
 
 Source: Found in `man grep`
 
@@ -180,7 +180,7 @@ government/Alcohol_Problems/Session4-PDF.txt:not have simple solutions. I think 
 government/Alcohol_Problems/Session4-PDF.txt:Finally, I would like to address the issue of funding. Much of
 ```
 
-The `-w` command line option only lists matches if the exact string is found (i.e., it is not a substring). For example, when searching accept, a word like acceptance would be excluded from the search. In this case, using `I` as the regex search helps single out personal annecdotes, quotes and acknowledgments rather than including words that begin with a capital `I`, making it powerful for text processing.
+I called `grep` with command line option `-w` and string `I` for all `txt` files (`*.txt`) in `government/Alcohol_Problems/`. The `-w` command line option only lists matches if the exact string is found (i.e., it is not a substring). For example, when searching accept, a word like acceptance would be excluded from the search. In this case, using `I` as the regex search helps single out personal annecdotes, quotes and acknowledgments rather than including words that begin with a capital `I`, making it powerful for text processing.
 
 Source: Found in `man grep`
 
@@ -194,7 +194,7 @@ government/Media/New_funding_sources.txt:DNA-People's Legal Services in Flagstaf
 government/Media/The_State_of_Pro_Bono.txt:of her own money on an appeal based on DNA evidence.
 ```
 
-The `-m` command line option limits the number of matches per file to the number provided (in this case `1`). This is useful for when we care to determine which files contain a string but only care about matching it a certain amount of times. If the number is `1`, `-m` provides similar functionality to `-l`, but also gives the matched line, which may be useful for data processing.
+I called `grep` with command line option `-m 1` and string `I` for all `txt` files (`*.txt`) in `government/Media/`. The `-m` command line option limits the number of matches per file to the number provided (in this case `1`). This is useful for when we care to determine which files contain a string but only care about matching it a certain amount of times. If the number is `1`, `-m` provides similar functionality to `-l`, but also gives the matched line, which may be useful for data processing.
 
 Source: Found in `man grep`
 
@@ -221,7 +221,7 @@ government/Post_Rate_Comm/Gleiman_gca2000.txt:story, Denton was leaning into the
 ```
 
 
-The `-m` command line option limits the number of matches per file to the number provided (in this case `2`). Limiting the number of matches to a number other than `1` may be useful when we need to cap the size of the output, or only need to process a certain amount of occurences of the string.
+I called `grep` with command line option `-m 2` and string `ball` for all `txt` files (`*.txt`) `government/Media/*` (all subdirectories of Media). The `-m` command line option limits the number of matches per file to the number provided (in this case `2`). Limiting the number of matches to a number other than `1` may be useful when we need to cap the size of the output, or only need to process a certain amount of occurences of the string.
 
 Source: Found in `man grep`
 
