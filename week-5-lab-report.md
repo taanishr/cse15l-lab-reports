@@ -69,7 +69,7 @@ plos/pmed.0020149.txt-        developed countries, and identifying and treating 
 plos/pmed.0020149.txt-        essential role in the prevention of CHD. Therapeutic lifestyle changes are important for
 ```
 
-I called `grep` with command line option `-C2` and string `Coronary` for all `txt` files (`*.txt`) in `plos/`. The `-C` command line option captures the lines before and after the matched content along with the matched line. In this case, `2` was provided as the number of lines to capture. This may be useful while looking through a long code base and you want to key in on the context surrounding a certain function call or variable mention.
+I called `grep` with command line option `-C2` and string `Coronary` for all `txt` files (`*.txt`) in `plos/`. The `-C` command line option captures the lines before and after the matched content along with the matched line. In this case, `2` was provided as the number of lines to capture above and below. This may be useful while looking through a long code base and you want to key in on the context surrounding a certain function call or variable mention.
 
 Source: Found in `man grep`.
 
@@ -113,7 +113,7 @@ biomed/1472-6882-1-7.txt-          magnesium. Animal product consumption was ver
 biomed/1472-6882-1-7.txt-          especially intakes of meat, poultry, and fish. Intakes
 ```
 
-I called `grep` with command line option `-C5` and string `salad` for all `txt` files (`*.txt`) in `biomed/`. The `-C` command line option captures the lines before and after the matched content along with the matched line. In this case, `5` was provided as the number of lines to capture. This specific example highlights how the `-C` flag may be useful to capture longer sections of text (such as paragraphs) which contain a specific string.
+I called `grep` with command line option `-C5` and string `salad` for all `txt` files (`*.txt`) in `biomed/`. The `-C` command line option captures the lines before and after the matched content along with the matched line. In this case, `5` was provided as the number of lines to capture above and below. This specific example highlights how the `-C` flag may be useful to capture longer sections of text (such as paragraphs) which contain a specific string.
 
 Source: Found in `man grep`
 
@@ -194,7 +194,7 @@ government/Media/New_funding_sources.txt:DNA-People's Legal Services in Flagstaf
 government/Media/The_State_of_Pro_Bono.txt:of her own money on an appeal based on DNA evidence.
 ```
 
-I called `grep` with command line option `-m 1` and string `I` for all `txt` files (`*.txt`) in `government/Media/`. The `-m` command line option limits the number of matches per file to the number provided (in this case `1`). This is useful for when we care to determine which files contain a string but only care about matching it a certain amount of times. If the number is `1`, `-m` provides similar functionality to `-l`, but also gives the matched line, which may be useful for data processing.
+I called `grep` with command line option `-m 1` and string `DNA` for all `txt` files (`*.txt`) in `government/Media/`. The `-m` command line option limits the number of matches per file to the number provided (in this case `1`). This is useful for when we care to determine which files contain a string but only care about matching it a certain amount of times. If the number is `1`, `-m` provides similar functionality to `-l`, but also gives the matched line, which may be useful for data processing.
 
 Source: Found in `man grep`
 
@@ -221,7 +221,7 @@ government/Post_Rate_Comm/Gleiman_gca2000.txt:story, Denton was leaning into the
 ```
 
 
-I called `grep` with command line option `-m 2` and string `ball` for all `txt` files (`*.txt`) `government/Media/*` (all subdirectories of Media). The `-m` command line option limits the number of matches per file to the number provided (in this case `2`). Limiting the number of matches to a number other than `1` may be useful when we need to cap the size of the output, or only need to process a certain amount of occurences of the string.
+I called `grep` with command line option `-m 2` and string `ball` for all `txt` files (`*.txt`) in `government/*` (all subdirectories of government). The `-m` command line option limits the number of matches per file to the number provided (in this case `2`). Limiting the number of matches to a number other than `1` may be useful when we need to cap the size of the output, or only need to process a certain amount of occurences of the string.
 
 Source: Found in `man grep`
 
