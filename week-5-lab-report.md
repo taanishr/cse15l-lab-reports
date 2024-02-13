@@ -42,7 +42,7 @@ static void reverseInPlace(int[] arr) {
 }
 ```
 
-reverseInPlace initially accessed the original array instead of making a copy. This meant that the array would become a mirror image of the elements in the second half of the array. By making a deep copy of the array and accessing the copy instead, the method then properly swapped the beginning and end elements.
+reverseInPlace initially accessed the original array instead of making a copy. This meant that the array would become a mirror image of the elements in the second half of the array. By making a temporary array with `int temp[] = new int[arr.length];`, making a deep copy of `arr`'s elements with `System.arraycopy(arr, 0, temp, 0, arr.length);`, and accessing the `temp[]` array's elements instead of `arr[]`'s, the method then properly swapped the beginning and end elements.
 
 # Part 2
 ## Command: `grep`
