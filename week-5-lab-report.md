@@ -150,6 +150,10 @@ biomed/1471-2202-2-5.txt:            computer http://www.apple.com. If the crite
 biomed/1471-2458-3-11.txt:        fresh-pressed apple cider [ 28 ] . Other foodborne
 ```
 
+This command line option only lists matches if the exact string is found (i.e., it is not a substring). For example, when searching accept, a word like acceptance would be excluded from the search. This is useful for filtering out text or code, like when searching for variable names to see how some data is transformed over the time of a file.
+
+Source: Found in `man grep`
+
 Example 2:
 
 ```
@@ -176,6 +180,10 @@ government/Alcohol_Problems/Session4-PDF.txt:not have simple solutions. I think 
 government/Alcohol_Problems/Session4-PDF.txt:Finally, I would like to address the issue of funding. Much of
 ```
 
+This command line option only lists matches if the exact string is found (i.e., it is not a substring). For example, when searching accept, a word like acceptance would be excluded from the search. In this case, using I as the regex search helps single out personal annecdotes, quotes and acknowledgments rather than including words that begin with a capital I, making it powerful for text processing.
+
+Source: Found in `man grep`
+
 ### Command-line option 4: Limiting number of matches per file with `-m`
 
 Example 1:
@@ -186,19 +194,34 @@ government/Media/New_funding_sources.txt:DNA-People's Legal Services in Flagstaf
 government/Media/The_State_of_Pro_Bono.txt:of her own money on an appeal based on DNA evidence.
 ```
 
+This command line option only limits matches to the number provided per file (in this case 1). This is useful for when we care to determine which files contain a string but only care about matching it a certain amount of times. If the number is 1, `-m` provides similar functionality to `-l`, but also gives the matched line, which may be useful for data processing.
+
+Source: Found in `man grep`
+
 Example 2:
 ```
-treja@taanishs-air technical % grep -m 1 ball government/*/*.txt
+treja@taanishs-air technical % grep -m 2 ball government/*/*.txt
 government/About_LSC/LegalServCorp_v_VelazquezOpinion.txt:campaign, or for use in "advocating or opposing any ballot
 government/Env_Prot_Agen/final.txt:the Western Hemisphere, and with our allies globally, to
 government/Env_Prot_Agen/multi102902.txt:these globally traded commodity chemicals, it is projected that
+government/Env_Prot_Agen/multi102902.txt:ball mills) equipment
 government/Gen_Account_Office/Testimony_cg00010t.txt:United States against an intercontinental ballistic missile attack
 government/Media/A_helping_hand.txt:Linda Samels Ceballos entered Loyola Law School in Los Angeles
+government/Media/A_helping_hand.txt:Mintie, a Claremont resident, made it possible for Ceballos to
 government/Media/Entities_Merge.txt:Verde County elections by absentee ballot after a former Ku Klux
 government/Media/Legal-aid_chief.txt:Cornhusker football player, he shooed a young Tom Osborne off a
+government/Media/Legal-aid_chief.txt:160-pound quarterback joined the freshman football team. It was
 government/Media/Terrorist_Attack.txt:Judge Kaye's hopes for keeping the pro bono ball rolling:
 government/Media/Unusual_Woodburn.txt:in the late 1990s. He sees Mixtecs playing basketball, shopping in
 government/Media/predatory_loans.txt:penalties and balloon payments on high-cost home loans.
 government/Post_Rate_Comm/Gleiman_EMASpeech.txt:crystal ball, I thought you might be interested in a brief outline
+government/Post_Rate_Comm/Gleiman_EMASpeech.txt:This fellow is flying a hot air balloon and suddenly realizes he
 government/Post_Rate_Comm/Gleiman_gca2000.txt:rabid baseball fan. So much so that he tries to see at least one
+government/Post_Rate_Comm/Gleiman_gca2000.txt:story, Denton was leaning into the plate in fantasy baseball camp
 ```
+
+
+This command line option only limits matches to the number provided per file (in this case 2). Limiting the number of matches to a number other than 1 may be useful when we need to cap the size of the output, or only need to process a certain amount of occurences.
+
+Source: Found in `man grep`
+
