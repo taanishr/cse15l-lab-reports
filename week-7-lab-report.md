@@ -1,4 +1,4 @@
-# Step 1: Logging into ieng6
+<img width="373" alt="image" src="https://github.com/taanishr/cse15l-lab-reports/assets/49845822/0fd72fd0-1906-406e-8020-011298fc3ef7"># Step 1: Logging into ieng6
 ![Login step](/loginstep.png)
 Keys pressed: `<s><s><h><SPACE><t><r><e><j><a><@><i><e><n><g><6><.><u><c><s><d><.><e><d><u>`
 
@@ -15,3 +15,14 @@ Here, I cloned my fork of the repository by typing the command `git clone` then 
 Keys pressed: `<c><d><SPACE><l><a><b><7><ENTER><b><a><s><h><SPACE><t><TAB>`
 
 Here, I entered the directory where the repository was cloned by typing `cd lab7`, and then ran the test script with `bash test.sh`. I used tab while calling bash so I wouldn't need to fill out the entire file name.
+
+# Step 4: Editing the code
+![Replacing character](/step4replace.png)
+
+Keys pressed: <v><i><m><SPACE><L><TAB><.><TAB><ENTER><4><3><j><e><x><i><2>
+
+Here, I typed the command `vim ListExamples.java`, using tab after `L` and `.` in order to autofill the file name, and then navigated down to the end of the first word of the 43rd line with `<4><3><j><e>`, and finally deleted the character at the end of the wod with `<x>` before replacing it with 2 by typing `<i><2>`.
+
+![Replacing character](/step4saveandexit.png)
+Keys pressed: <ESCAPE><:><x><ENTER>
+To get back to the terminal, I exited out of insert mode by hitting `<ESCAPE>`, then typed `<:><x><ENTER>` to save and exit the file.
