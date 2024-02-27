@@ -31,6 +31,7 @@ To get back to the terminal, I exited out of insert mode by hitting `<ESCAPE>`, 
 
 # Step 5: Running the tests again
 ![Running tests successfully](/passedtests.png)
+
 Keys pressed: <UP><UP>
 
 Here, I pressed the up arrow twice to get back to the bash command I called earlier (`bash test.sh`)
