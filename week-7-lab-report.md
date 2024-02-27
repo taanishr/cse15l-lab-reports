@@ -35,3 +35,18 @@ To get back to the terminal, I exited out of insert mode by hitting `<ESCAPE>`, 
 Keys pressed: `<UP><UP>`
 
 Here, I pressed the up arrow twice to get back to the bash command I called earlier (`bash test.sh`)
+
+# Step 6: Pushing to repository
+![Adding file changes](/step6add.png)
+Keys pressed: `<g><i><t><SPACE><a><d><d><SPACE><L><TAB><ENTER>`
+
+Here, I typed `git add L` then pressed tab to get `git add ListExamples.java`, which staged those change.
+
+![Commiting file changes](/step6commit.png)
+`<g><i><t><SPACE><c><o><m><TAB><-><m><f><i><x><e><d>`
+Here, I typed `git commit -m fixed` to commit the changes with the message `fixed`.
+
+![Pushing changes](/step6push.png)
+`<g><i><t><SPACE><p><u><s><h><SPACE><o><TAB><main>`
+Here, I typed `git push origin main` to push the commited changes to the main branch of my repository on github.
+
