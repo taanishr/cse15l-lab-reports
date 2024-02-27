@@ -24,5 +24,7 @@ Keys pressed: `<v><i><m><SPACE><L><TAB><.><TAB><ENTER><4><3><j><e><x><i><2>`
 Here, I typed the command `vim ListExamples.java`, using tab after `L` and `.` in order to autofill the file name, and then navigated down to the end of the first word of the 43rd line with `<4><3><j><e>`, and finally deleted the character at the end of the wod with `<x>` before replacing it with 2 by typing `<i><2>`.
 
 ![Replacing character](/step4saveandexit.png)
+
 Keys pressed: <ESCAPE><:><x><ENTER>
+
 To get back to the terminal, I exited out of insert mode by hitting `<ESCAPE>`, then typed `<:><x><ENTER>` to save and exit the file.
