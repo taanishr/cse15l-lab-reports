@@ -1,4 +1,4 @@
-<img width="373" alt="image" src="https://github.com/taanishr/cse15l-lab-reports/assets/49845822/0fd72fd0-1906-406e-8020-011298fc3ef7"># Step 1: Logging into ieng6
+# Step 1: Logging into ieng6
 ![Login step](/loginstep.png)
 Keys pressed: `<s><s><h><SPACE><t><r><e><j><a><@><i><e><n><g><6><.><u><c><s><d><.><e><d><u>`
 
