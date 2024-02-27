@@ -28,3 +28,9 @@ Here, I typed the command `vim ListExamples.java`, using tab after `L` and `.` i
 Keys pressed: <ESCAPE><:><x><ENTER>
 
 To get back to the terminal, I exited out of insert mode by hitting `<ESCAPE>`, then typed `<:><x><ENTER>` to save and exit the file.
+
+# Step 5: Running the tests again
+![Running tests successfully](/passedtests.png)
+Keys pressed: <UP><UP>
+
+Here, I pressed the up arrow twice to get back to the bash command I called earlier (`bash test.sh`)
