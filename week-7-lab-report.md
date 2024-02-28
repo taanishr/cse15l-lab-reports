@@ -45,13 +45,13 @@ Here, I typed `git add L` then pressed tab to get `git add ListExamples.java`, w
 
 ![Commiting file changes](/step6commit.png)
 
-Keys pressed: `g i t<SPACE> c o m <TAB> - m f i x e d<ENTER>`
+Keys pressed: `g i t<SPACE> c o m <TAB> - m f i x e d <ENTER>`
 
 Here, I typed `git commit -m fixed` to commit the changes I staged with the message `fixed`.
 
 ![Pushing changes](/step6push.png)
 
-Keys pressed: `g i t <SPACE> p u s h <SPACE> o r i g i n <TAB> m a i n <ENTER>`
+Keys pressed: `g i t <SPACE> p u s h <SPACE> o <TAB> m <TAB><ENTER>`
 
 Here, I typed `git push origin main` to push the commited changes to the main branch of my repository on github.
 
