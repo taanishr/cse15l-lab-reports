@@ -45,7 +45,7 @@ Here, I typed `git add L` then pressed tab to get `git add ListExamples.java`, w
 
 ![Commiting file changes](/step6commit.png)
 
-Keys pressed: `g i t<SPACE> c o m <TAB> - m f i x e d <ENTER>`
+Keys pressed: `g i t <SPACE> c o m <TAB> - m f i x e d <ENTER>`
 
 Here, I typed `git commit -m fixed` to commit the changes I staged with the message `fixed`.
 
