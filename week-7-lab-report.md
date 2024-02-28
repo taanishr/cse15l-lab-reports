@@ -1,6 +1,6 @@
 # Step 1: Logging into ieng6
 ![Login step](/loginstep.png)
-Keys pressed: `<s><s><h><SPACE><t><r><e><j><a><@><i><e><n><g><6><.><u><c><s><d><.><e><d><u><ENTER>`
+Keys pressed: `s s h <SPACE> t r e j a @ i e n g 6 . u c s d . e d u <ENTER>`
 
 Here, I logged into the remote server by typing in each character of `ssh treja@ieng6.ucsd.edu`
 
