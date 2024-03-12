@@ -52,7 +52,7 @@ echo -e "Tests failed: $failures\nTests ran: $tests_run\nSubmission grade: $grad
 Try looking into how bash calculates division.
 
 # Student response:
-Oh, got it. Thanks. It looks like bash doesn't do floating point divison. Therefore, 2/3 was just dividing into zero. I fixed this by changing my script to multiply the tests failed by 100. Here's how it looks now:
+Oh, got it. Thanks. It looks like bash doesn't do floating point divison. Therefore, 2/3 was just dividing into zero. I fixed this by changing my script to multiply the tests failed by 100. Here's the output now.
 
 ```
 [treja@ieng6-201]:grader-review-taanishr:442$ bash grade.sh https://github.com/ucsd-cse15l-f22/list-examples-subtle
@@ -60,4 +60,9 @@ Finished cloning
 Tests failed: 1
 Tests ran: 3
 Submission grade: 66%
+```
+
+And here is the line I changed to fix my code.
+```
+grade=$((((tests_run-failures)*100/tests_run)))
 ```
