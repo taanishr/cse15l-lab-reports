@@ -70,4 +70,4 @@ grade=$((((tests_run-failures)*100/tests_run)))
 ```
 
 # Part 2:
-One thing I learned about in lab during the second half of this quarter that I didn't know about was using git from the command line. I found the lab helped me practice and get used to how the commands work, and they nearly became second nature to me. Previously, I had struggled with using git from the command line, so I always just used vs code instead.
+One thing I learned about in lab during the second half of this quarter that I didn't know about was using git from the command line. Previously, I had struggled with using git from the command line, so I always just used vs code instead. I found the lab helped me practice and get used to how the commands work, and they essentialy became second nature to me.
