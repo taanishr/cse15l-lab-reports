@@ -1,4 +1,6 @@
-# Edstem post:
+# Part 1
+
+## Edstem post:
 
 **Title:** Autograder calculating wrong final percentage!
 
@@ -48,10 +50,10 @@ grade=$((((tests_run-failures)/tests_run)))
 echo -e "Tests failed: $failures\nTests ran: $tests_run\nSubmission grade: $grade%" 2>&1 | tee grade.txt
 ```
 
-# TA leading question:
+## TA leading question:
 Try looking into how bash calculates division.
 
-# Student response:
+## Student response:
 Oh, got it. Thanks. It looks like bash doesn't do floating point divison. Therefore, 2/3 was just dividing into zero. I fixed this by changing my script to multiply the tests failed by 100. Here's the output now.
 
 ```
@@ -66,3 +68,6 @@ And here is the line I changed to fix my code.
 ```
 grade=$((((tests_run-failures)*100/tests_run)))
 ```
+
+# Part 2:
+One thing I learned about in lab during the second half of this quarter that I didn't know about was using git from the command line. I found the lab helped me practice and get used to how the commands work, and they nearly became second nature to me. Previously, I had struggled with using git from the command line, so I always just used vs code instead.
