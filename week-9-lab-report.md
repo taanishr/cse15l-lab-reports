@@ -8,11 +8,11 @@
 
 My autograder script isn't producing the correct final percentage. Here, it says 1 test failed, implying that the percentage should be 66%, but instead its saying 0?
 ```
-[treja@ieng6-201]:grader-review-taanishr:430$ bash grade.sh https://github.com/ucsd-cse15l-f22/list-methods-corrected
+[treja@ieng6-201]:grader-review-taanishr:442$ bash grade.sh https://github.com/ucsd-cse15l-f22/list-examples-subtle
 Finished cloning
-Tests failed: 0
+Tests failed: 1
 Tests ran: 3
-Submission grade: 1%
+Submission grade: 66%
 ```
 
 Here is the structure of my directory:
